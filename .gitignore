@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Photoshop temp files
+~$*
+
+# Secrets (if any)
+secrets.yml
+*.secret
+
+# Test/scratch files
+scratch/
+test/
