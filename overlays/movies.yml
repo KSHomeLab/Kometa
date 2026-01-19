@@ -1,0 +1,317 @@
+# Original Source Overlay - Movies (Studios)
+# Shows the original production studio on movie posters
+#
+# Usage in Kometa config:
+#   overlay_files:
+#     - url: https://raw.githubusercontent.com/KSHomeLab/Kometa/main/overlays/movies.yml
+
+templates:
+  studio:
+    optional:
+      - overlay_name
+    default:
+      overlay_name: <<overlay_name>>
+    overlay:
+      name: <<overlay_name>>
+      url: https://raw.githubusercontent.com/KSHomeLab/Kometa/main/overlays/studios/<<overlay_name>>.png
+      horizontal_align: left
+      horizontal_offset: 15
+      vertical_align: top
+      vertical_offset: 15
+      back_color: 00
+      back_width: 1000
+      back_height: 1500
+
+overlays:
+  # ===== Major Hollywood Studios =====
+  Warner Bros:
+    template:
+      - name: studio
+        overlay_name: warner-bros
+    plex_search:
+      any:
+        studio:
+          - Warner Bros. Pictures
+          - Warner Bros.
+          - Warner Bros. Entertainment
+          - Warner Bros
+
+  Universal:
+    template:
+      - name: studio
+        overlay_name: universal
+    plex_search:
+      any:
+        studio:
+          - Universal Pictures
+          - Universal Studios
+          - Universal
+
+  Paramount:
+    template:
+      - name: studio
+        overlay_name: paramount
+    plex_search:
+      any:
+        studio:
+          - Paramount Pictures
+          - Paramount
+          - Paramount Animation
+
+  Sony Pictures:
+    template:
+      - name: studio
+        overlay_name: sony
+    plex_search:
+      any:
+        studio:
+          - Sony Pictures
+          - Columbia Pictures
+          - TriStar Pictures
+          - Sony Pictures Animation
+          - Screen Gems
+
+  Walt Disney:
+    template:
+      - name: studio
+        overlay_name: disney
+    plex_search:
+      any:
+        studio:
+          - Walt Disney Pictures
+          - Walt Disney Animation Studios
+          - Disney
+          - Buena Vista
+
+  20th Century:
+    template:
+      - name: studio
+        overlay_name: 20th-century
+    plex_search:
+      any:
+        studio:
+          - 20th Century Studios
+          - 20th Century Fox
+          - Twentieth Century Fox
+
+  MGM:
+    template:
+      - name: studio
+        overlay_name: mgm
+    plex_search:
+      any:
+        studio:
+          - Metro-Goldwyn-Mayer
+          - MGM
+          - United Artists
+
+  Lionsgate:
+    template:
+      - name: studio
+        overlay_name: lionsgate
+    plex_search:
+      any:
+        studio:
+          - Lionsgate
+          - Lionsgate Films
+          - Summit Entertainment
+
+  # ===== Prestige / Independent =====
+  A24:
+    template:
+      - name: studio
+        overlay_name: a24
+    plex_search:
+      any:
+        studio: A24
+
+  Focus Features:
+    template:
+      - name: studio
+        overlay_name: focus-features
+    plex_search:
+      any:
+        studio: Focus Features
+
+  Miramax:
+    template:
+      - name: studio
+        overlay_name: miramax
+    plex_search:
+      any:
+        studio: Miramax
+
+  Searchlight:
+    template:
+      - name: studio
+        overlay_name: searchlight
+    plex_search:
+      any:
+        studio:
+          - Searchlight Pictures
+          - Fox Searchlight Pictures
+
+  Neon:
+    template:
+      - name: studio
+        overlay_name: neon
+    plex_search:
+      any:
+        studio: Neon
+
+  # ===== Franchise Studios =====
+  Marvel Studios:
+    template:
+      - name: studio
+        overlay_name: marvel
+    plex_search:
+      any:
+        studio: Marvel Studios
+
+  Lucasfilm:
+    template:
+      - name: studio
+        overlay_name: lucasfilm
+    plex_search:
+      any:
+        studio:
+          - Lucasfilm Ltd.
+          - Lucasfilm
+
+  DC Studios:
+    template:
+      - name: studio
+        overlay_name: dc
+    plex_search:
+      any:
+        studio:
+          - DC Studios
+          - DC Films
+          - DC Entertainment
+
+  Pixar:
+    template:
+      - name: studio
+        overlay_name: pixar
+    plex_search:
+      any:
+        studio: Pixar
+
+  DreamWorks:
+    template:
+      - name: studio
+        overlay_name: dreamworks
+    plex_search:
+      any:
+        studio:
+          - DreamWorks Animation
+          - DreamWorks Pictures
+          - DreamWorks
+
+  Illumination:
+    template:
+      - name: studio
+        overlay_name: illumination
+    plex_search:
+      any:
+        studio: Illumination Entertainment
+
+  Blue Sky:
+    template:
+      - name: studio
+        overlay_name: blue-sky
+    plex_search:
+      any:
+        studio: Blue Sky Studios
+
+  # ===== Streaming Originals =====
+  Netflix:
+    template:
+      - name: studio
+        overlay_name: netflix
+    plex_search:
+      any:
+        studio: Netflix
+
+  Amazon Studios:
+    template:
+      - name: studio
+        overlay_name: amazon
+    plex_search:
+      any:
+        studio:
+          - Amazon Studios
+          - Amazon MGM Studios
+
+  Apple Studios:
+    template:
+      - name: studio
+        overlay_name: apple
+    plex_search:
+      any:
+        studio:
+          - Apple Studios
+          - Apple TV+
+
+  Hulu:
+    template:
+      - name: studio
+        overlay_name: hulu
+    plex_search:
+      any:
+        studio: Hulu
+
+  HBO Films:
+    template:
+      - name: studio
+        overlay_name: hbo
+    plex_search:
+      any:
+        studio:
+          - HBO Films
+          - HBO Max
+
+  # ===== Horror =====
+  Blumhouse:
+    template:
+      - name: studio
+        overlay_name: blumhouse
+    plex_search:
+      any:
+        studio: Blumhouse Productions
+
+  # ===== Japanese Animation =====
+  Studio Ghibli:
+    template:
+      - name: studio
+        overlay_name: ghibli
+    plex_search:
+      any:
+        studio: Studio Ghibli
+
+  Toho:
+    template:
+      - name: studio
+        overlay_name: toho
+    plex_search:
+      any:
+        studio:
+          - Toho
+          - Toho Company
+
+  # ===== British =====
+  Working Title:
+    template:
+      - name: studio
+        overlay_name: working-title
+    plex_search:
+      any:
+        studio: Working Title Films
+
+  Hammer:
+    template:
+      - name: studio
+        overlay_name: hammer
+    plex_search:
+      any:
+        studio: Hammer Film Productions
