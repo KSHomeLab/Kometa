@@ -1,0 +1,1121 @@
+# Original Source Overlay - TV Shows (Networks)
+# Shows the original broadcast network on TV show posters
+#
+# Usage in Kometa config:
+#   overlay_files:
+#     - url: https://raw.githubusercontent.com/KSHomeLab/Kometa/main/overlays/shows.yml
+
+templates:
+  network:
+    optional:
+      - overlay_name
+    default:
+      overlay_name: <<overlay_name>>
+    overlay:
+      name: <<overlay_name>>
+      url: https://raw.githubusercontent.com/KSHomeLab/Kometa/main/overlays/networks/<<overlay_name>>.png
+      horizontal_align: left
+      horizontal_offset: 0
+      vertical_align: top
+      vertical_offset: 0
+      back_color: 00
+      back_width: 1000
+      back_height: 1500
+
+overlays:
+  # ===== UK Networks =====
+  BBC One:
+    template:
+      - name: network
+        overlay_name: BBC One
+    plex_search:
+      any:
+        network: BBC One
+
+  BBC Two:
+    template:
+      - name: network
+        overlay_name: BBC Two
+    plex_search:
+      any:
+        network: BBC Two
+
+  BBC Three:
+    template:
+      - name: network
+        overlay_name: BBC Three
+    plex_search:
+      any:
+        network: BBC Three
+
+  BBC Four:
+    template:
+      - name: network
+        overlay_name: BBC Four
+    plex_search:
+      any:
+        network: BBC Four
+
+  BBC:
+    template:
+      - name: network
+        overlay_name: BBC
+    plex_search:
+      any:
+        network: BBC
+
+  BBC iPlayer:
+    template:
+      - name: network
+        overlay_name: BBC iPlayer
+    plex_search:
+      any:
+        network: BBC iPlayer
+
+  BBC America:
+    template:
+      - name: network
+        overlay_name: BBC America
+    plex_search:
+      any:
+        network: BBC America
+
+  ITV:
+    template:
+      - name: network
+        overlay_name: ITV
+    plex_search:
+      any:
+        network: ITV
+
+  ITV1:
+    template:
+      - name: network
+        overlay_name: ITV1
+    plex_search:
+      any:
+        network: ITV1
+
+  ITV2:
+    template:
+      - name: network
+        overlay_name: ITV2
+    plex_search:
+      any:
+        network: ITV2
+
+  ITV3:
+    template:
+      - name: network
+        overlay_name: ITV3
+    plex_search:
+      any:
+        network: ITV3
+
+  ITV4:
+    template:
+      - name: network
+        overlay_name: ITV4
+    plex_search:
+      any:
+        network: ITV4
+
+  ITVX:
+    template:
+      - name: network
+        overlay_name: ITVX
+    plex_search:
+      any:
+        network: ITVX
+
+  ITV Encore:
+    template:
+      - name: network
+        overlay_name: ITV Encore
+    plex_search:
+      any:
+        network: ITV Encore
+
+  Channel 4:
+    template:
+      - name: network
+        overlay_name: Channel 4
+    plex_search:
+      any:
+        network: Channel 4
+
+  E4:
+    template:
+      - name: network
+        overlay_name: E4
+    plex_search:
+      any:
+        network: E4
+
+  Channel 5:
+    template:
+      - name: network
+        overlay_name: Channel 5
+    plex_search:
+      any:
+        network: Channel 5
+
+  Sky:
+    template:
+      - name: network
+        overlay_name: Sky
+    plex_search:
+      any:
+        network:
+          - Sky
+          - Sky Atlantic
+          - Sky One
+          - Sky Max
+
+  Dave:
+    template:
+      - name: network
+        overlay_name: Dave
+    plex_search:
+      any:
+        network: Dave
+
+  UKTV:
+    template:
+      - name: network
+        overlay_name: UKTV
+    plex_search:
+      any:
+        network: UKTV
+
+  Alibi:
+    template:
+      - name: network
+        overlay_name: Alibi
+    plex_search:
+      any:
+        network: Alibi
+
+  BritBox:
+    template:
+      - name: network
+        overlay_name: BritBox
+    plex_search:
+      any:
+        network: BritBox
+
+  # ===== US Broadcast Networks =====
+  NBC:
+    template:
+      - name: network
+        overlay_name: NBC
+    plex_search:
+      any:
+        network: NBC
+
+  ABC:
+    template:
+      - name: network
+        overlay_name: ABC
+    plex_search:
+      any:
+        network: ABC
+
+  CBS:
+    template:
+      - name: network
+        overlay_name: CBS
+    plex_search:
+      any:
+        network: CBS
+
+  FOX:
+    template:
+      - name: network
+        overlay_name: FOX
+    plex_search:
+      any:
+        network:
+          - FOX
+          - Fox
+
+  The CW:
+    template:
+      - name: network
+        overlay_name: The CW
+    plex_search:
+      any:
+        network: The CW
+
+  The WB:
+    template:
+      - name: network
+        overlay_name: The WB
+    plex_search:
+      any:
+        network: The WB
+
+  UPN:
+    template:
+      - name: network
+        overlay_name: UPN
+    plex_search:
+      any:
+        network: UPN
+
+  PBS:
+    template:
+      - name: network
+        overlay_name: PBS
+    plex_search:
+      any:
+        network: PBS
+
+  # ===== US Cable Networks =====
+  HBO:
+    template:
+      - name: network
+        overlay_name: HBO
+    plex_search:
+      any:
+        network: HBO
+
+  HBO Max:
+    template:
+      - name: network
+        overlay_name: HBO Max
+    plex_search:
+      any:
+        network: HBO Max
+
+  Max:
+    template:
+      - name: network
+        overlay_name: Max
+    plex_search:
+      any:
+        network: Max
+
+  Showtime:
+    template:
+      - name: network
+        overlay_name: Showtime
+    plex_search:
+      any:
+        network: Showtime
+
+  Starz:
+    template:
+      - name: network
+        overlay_name: Starz
+    plex_search:
+      any:
+        network: Starz
+
+  Cinemax:
+    template:
+      - name: network
+        overlay_name: Cinemax
+    plex_search:
+      any:
+        network: Cinemax
+
+  AMC:
+    template:
+      - name: network
+        overlay_name: AMC
+    plex_search:
+      any:
+        network: AMC
+
+  AMC+:
+    template:
+      - name: network
+        overlay_name: AMC+
+    plex_search:
+      any:
+        network: AMC+
+
+  FX:
+    template:
+      - name: network
+        overlay_name: FX
+    plex_search:
+      any:
+        network: FX
+
+  FXX:
+    template:
+      - name: network
+        overlay_name: FXX
+    plex_search:
+      any:
+        network: FXX
+
+  USA Network:
+    template:
+      - name: network
+        overlay_name: USA Network
+    plex_search:
+      any:
+        network: USA Network
+
+  TNT:
+    template:
+      - name: network
+        overlay_name: TNT
+    plex_search:
+      any:
+        network: TNT
+
+  TBS:
+    template:
+      - name: network
+        overlay_name: TBS
+    plex_search:
+      any:
+        network: TBS
+
+  Syfy:
+    template:
+      - name: network
+        overlay_name: Syfy
+    plex_search:
+      any:
+        network: Syfy
+
+  Bravo:
+    template:
+      - name: network
+        overlay_name: Bravo
+    plex_search:
+      any:
+        network: Bravo
+
+  Comedy Central:
+    template:
+      - name: network
+        overlay_name: Comedy Central
+    plex_search:
+      any:
+        network: Comedy Central
+
+  Adult Swim:
+    template:
+      - name: network
+        overlay_name: Adult Swim
+    plex_search:
+      any:
+        network: Adult Swim
+
+  Cartoon Network:
+    template:
+      - name: network
+        overlay_name: Cartoon Network
+    plex_search:
+      any:
+        network: Cartoon Network
+
+  Nickelodeon:
+    template:
+      - name: network
+        overlay_name: Nickelodeon
+    plex_search:
+      any:
+        network: Nickelodeon
+
+  Nick:
+    template:
+      - name: network
+        overlay_name: Nick
+    plex_search:
+      any:
+        network: Nick
+
+  Disney Channel:
+    template:
+      - name: network
+        overlay_name: Disney Channel
+    plex_search:
+      any:
+        network: Disney Channel
+
+  Disney XD:
+    template:
+      - name: network
+        overlay_name: Disney XD
+    plex_search:
+      any:
+        network: Disney XD
+
+  Disney Junior:
+    template:
+      - name: network
+        overlay_name: Disney Junior
+    plex_search:
+      any:
+        network: Disney Junior
+
+  Freeform:
+    template:
+      - name: network
+        overlay_name: Freeform
+    plex_search:
+      any:
+        network: Freeform
+
+  ABC Family:
+    template:
+      - name: network
+        overlay_name: ABC Family
+    plex_search:
+      any:
+        network: ABC Family
+
+  History:
+    template:
+      - name: network
+        overlay_name: History
+    plex_search:
+      any:
+        network:
+          - History
+          - History Channel
+
+  Discovery:
+    template:
+      - name: network
+        overlay_name: Discovery
+    plex_search:
+      any:
+        network: Discovery
+
+  discovery+:
+    template:
+      - name: network
+        overlay_name: discovery+
+    plex_search:
+      any:
+        network: discovery+
+
+  National Geographic:
+    template:
+      - name: network
+        overlay_name: National Geographic
+    plex_search:
+      any:
+        network:
+          - National Geographic
+          - Nat Geo
+
+  Animal Planet:
+    template:
+      - name: network
+        overlay_name: Animal Planet
+    plex_search:
+      any:
+        network: Animal Planet
+
+  TLC:
+    template:
+      - name: network
+        overlay_name: TLC
+    plex_search:
+      any:
+        network: TLC
+
+  HGTV:
+    template:
+      - name: network
+        overlay_name: HGTV
+    plex_search:
+      any:
+        network: HGTV
+
+  Food Network:
+    template:
+      - name: network
+        overlay_name: Food Network
+    plex_search:
+      any:
+        network: Food Network
+
+  Travel Channel:
+    template:
+      - name: network
+        overlay_name: Travel Channel
+    plex_search:
+      any:
+        network: Travel Channel
+
+  A&E:
+    template:
+      - name: network
+        overlay_name: A&E
+    plex_search:
+      any:
+        network: A&E
+
+  Lifetime:
+    template:
+      - name: network
+        overlay_name: Lifetime
+    plex_search:
+      any:
+        network: Lifetime
+
+  MTV:
+    template:
+      - name: network
+        overlay_name: MTV
+    plex_search:
+      any:
+        network: MTV
+
+  VH1:
+    template:
+      - name: network
+        overlay_name: VH1
+    plex_search:
+      any:
+        network: VH1
+
+  BET:
+    template:
+      - name: network
+        overlay_name: BET
+    plex_search:
+      any:
+        network: BET
+
+  E!:
+    template:
+      - name: network
+        overlay_name: E!
+    plex_search:
+      any:
+        network: E!
+
+  ESPN:
+    template:
+      - name: network
+        overlay_name: ESPN
+    plex_search:
+      any:
+        network: ESPN
+
+  truTV:
+    template:
+      - name: network
+        overlay_name: truTV
+    plex_search:
+      any:
+        network: truTV
+
+  Paramount Network:
+    template:
+      - name: network
+        overlay_name: Paramount Network
+    plex_search:
+      any:
+        network: Paramount Network
+
+  Spike:
+    template:
+      - name: network
+        overlay_name: Spike
+    plex_search:
+      any:
+        network: Spike
+
+  # ===== Streaming Originals =====
+  Netflix:
+    template:
+      - name: network
+        overlay_name: Netflix
+    plex_search:
+      any:
+        network: Netflix
+
+  Prime Video:
+    template:
+      - name: network
+        overlay_name: Prime Video
+    plex_search:
+      any:
+        network:
+          - Prime Video
+          - Amazon Prime Video
+          - Amazon
+
+  Disney+:
+    template:
+      - name: network
+        overlay_name: Disney+
+    plex_search:
+      any:
+        network: Disney+
+
+  Apple TV+:
+    template:
+      - name: network
+        overlay_name: Apple TV+
+    plex_search:
+      any:
+        network: Apple TV+
+
+  Hulu:
+    template:
+      - name: network
+        overlay_name: Hulu
+    plex_search:
+      any:
+        network: Hulu
+
+  Peacock:
+    template:
+      - name: network
+        overlay_name: Peacock
+    plex_search:
+      any:
+        network: Peacock
+
+  Paramount+:
+    template:
+      - name: network
+        overlay_name: Paramount+
+    plex_search:
+      any:
+        network: Paramount+
+
+  MGM+:
+    template:
+      - name: network
+        overlay_name: MGM+
+    plex_search:
+      any:
+        network: MGM+
+
+  Freevee:
+    template:
+      - name: network
+        overlay_name: Freevee
+    plex_search:
+      any:
+        network: Freevee
+
+  tubi:
+    template:
+      - name: network
+        overlay_name: tubi
+    plex_search:
+      any:
+        network: tubi
+
+  Shudder:
+    template:
+      - name: network
+        overlay_name: Shudder
+    plex_search:
+      any:
+        network: Shudder
+
+  Crackle:
+    template:
+      - name: network
+        overlay_name: Crackle
+    plex_search:
+      any:
+        network: Crackle
+
+  The Roku Channel:
+    template:
+      - name: network
+        overlay_name: The Roku Channel
+    plex_search:
+      any:
+        network: The Roku Channel
+
+  YouTube:
+    template:
+      - name: network
+        overlay_name: YouTube
+    plex_search:
+      any:
+        network: YouTube
+
+  Plex:
+    template:
+      - name: network
+        overlay_name: Plex
+    plex_search:
+      any:
+        network: Plex
+
+  # ===== Anime =====
+  Crunchyroll:
+    template:
+      - name: network
+        overlay_name: Crunchyroll
+    plex_search:
+      any:
+        network: Crunchyroll
+
+  TV Tokyo:
+    template:
+      - name: network
+        overlay_name: TV Tokyo
+    plex_search:
+      any:
+        network: TV Tokyo
+
+  Tokyo MX:
+    template:
+      - name: network
+        overlay_name: Tokyo MX
+    plex_search:
+      any:
+        network: Tokyo MX
+
+  Fuji TV:
+    template:
+      - name: network
+        overlay_name: Fuji TV
+    plex_search:
+      any:
+        network: Fuji TV
+
+  Nippon TV:
+    template:
+      - name: network
+        overlay_name: Nippon TV
+    plex_search:
+      any:
+        network: Nippon TV
+
+  tv asahi:
+    template:
+      - name: network
+        overlay_name: tv asahi
+    plex_search:
+      any:
+        network: tv asahi
+
+  AT-X:
+    template:
+      - name: network
+        overlay_name: AT-X
+    plex_search:
+      any:
+        network: AT-X
+
+  bilibili:
+    template:
+      - name: network
+        overlay_name: bilibili
+    plex_search:
+      any:
+        network: bilibili
+
+  # ===== Canadian =====
+  CBC:
+    template:
+      - name: network
+        overlay_name: CBC
+    plex_search:
+      any:
+        network: CBC
+
+  CBC Television:
+    template:
+      - name: network
+        overlay_name: CBC Television
+    plex_search:
+      any:
+        network: CBC Television
+
+  CTV:
+    template:
+      - name: network
+        overlay_name: CTV
+    plex_search:
+      any:
+        network: CTV
+
+  Global TV:
+    template:
+      - name: network
+        overlay_name: Global TV
+    plex_search:
+      any:
+        network: Global TV
+
+  Crave:
+    template:
+      - name: network
+        overlay_name: Crave
+    plex_search:
+      any:
+        network: Crave
+
+  Citytv:
+    template:
+      - name: network
+        overlay_name: Citytv
+    plex_search:
+      any:
+        network: Citytv
+
+  # ===== Australian =====
+  ABC TV:
+    template:
+      - name: network
+        overlay_name: ABC TV
+    plex_search:
+      any:
+        network:
+          - ABC TV
+          - ABC (AU)
+          - ABC Australia
+
+  Nine Network:
+    template:
+      - name: network
+        overlay_name: Nine Network
+    plex_search:
+      any:
+        network: Nine Network
+
+  Seven Network:
+    template:
+      - name: network
+        overlay_name: Seven Network
+    plex_search:
+      any:
+        network: Seven Network
+
+  Network 10:
+    template:
+      - name: network
+        overlay_name: Network 10
+    plex_search:
+      any:
+        network: Network 10
+
+  SBS:
+    template:
+      - name: network
+        overlay_name: SBS
+    plex_search:
+      any:
+        network: SBS
+
+  Stan:
+    template:
+      - name: network
+        overlay_name: Stan
+    plex_search:
+      any:
+        network: Stan
+
+  Binge:
+    template:
+      - name: network
+        overlay_name: Binge
+    plex_search:
+      any:
+        network: Binge
+
+  # ===== European =====
+  Canal+:
+    template:
+      - name: network
+        overlay_name: Canal+
+    plex_search:
+      any:
+        network: Canal+
+
+  TF1:
+    template:
+      - name: network
+        overlay_name: TF1
+    plex_search:
+      any:
+        network: TF1
+
+  France 2:
+    template:
+      - name: network
+        overlay_name: France 2
+    plex_search:
+      any:
+        network: France 2
+
+  Arte:
+    template:
+      - name: network
+        overlay_name: Arte
+    plex_search:
+      any:
+        network: Arte
+
+  ZDF:
+    template:
+      - name: network
+        overlay_name: ZDF
+    plex_search:
+      any:
+        network: ZDF
+
+  ARD:
+    template:
+      - name: network
+        overlay_name: ARD
+    plex_search:
+      any:
+        network: ARD
+
+  RTL:
+    template:
+      - name: network
+        overlay_name: RTL
+    plex_search:
+      any:
+        network: RTL
+
+  Viaplay:
+    template:
+      - name: network
+        overlay_name: Viaplay
+    plex_search:
+      any:
+        network: Viaplay
+
+  SVT:
+    template:
+      - name: network
+        overlay_name: SVT
+    plex_search:
+      any:
+        network: SVT
+
+  TV4:
+    template:
+      - name: network
+        overlay_name: TV4
+    plex_search:
+      any:
+        network: TV4
+
+  NRK1:
+    template:
+      - name: network
+        overlay_name: NRK1
+    plex_search:
+      any:
+        network: NRK1
+
+  DR1:
+    template:
+      - name: network
+        overlay_name: DR1
+    plex_search:
+      any:
+        network: DR1
+
+  RTÉ One:
+    template:
+      - name: network
+        overlay_name: RTÉ One
+    plex_search:
+      any:
+        network: RTÉ One
+
+  Virgin Media One:
+    template:
+      - name: network
+        overlay_name: Virgin Media One
+    plex_search:
+      any:
+        network: Virgin Media One
+
+  Rai 1:
+    template:
+      - name: network
+        overlay_name: Rai 1
+    plex_search:
+      any:
+        network: Rai 1
+
+  Canale 5:
+    template:
+      - name: network
+        overlay_name: Canale 5
+    plex_search:
+      any:
+        network: Canale 5
+
+  # ===== Asian =====
+  tvN:
+    template:
+      - name: network
+        overlay_name: tvN
+    plex_search:
+      any:
+        network: tvN
+
+  JTBC:
+    template:
+      - name: network
+        overlay_name: JTBC
+    plex_search:
+      any:
+        network: JTBC
+
+  KBS2:
+    template:
+      - name: network
+        overlay_name: KBS2
+    plex_search:
+      any:
+        network: KBS2
+
+  MBC:
+    template:
+      - name: network
+        overlay_name: MBC
+    plex_search:
+      any:
+        network: MBC
+
+  iQiyi:
+    template:
+      - name: network
+        overlay_name: iQiyi
+    plex_search:
+      any:
+        network: iQiyi
+
+  Tencent Video:
+    template:
+      - name: network
+        overlay_name: Tencent Video
+    plex_search:
+      any:
+        network: Tencent Video
+
+  Youku:
+    template:
+      - name: network
+        overlay_name: Youku
+    plex_search:
+      any:
+        network: Youku
+
+  NHK:
+    template:
+      - name: network
+        overlay_name: NHK
+    plex_search:
+      any:
+        network: NHK

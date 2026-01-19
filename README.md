@@ -45,4 +45,3 @@ url: https://raw.githubusercontent.com/KSHomeLab/Kometa/main/overlays/resolution
 ## Resources
 
 - [Kometa Wiki](https://kometa.wiki/)
-- [s0len's meta-manager-config](https://github.com/s0len/meta-manager-config) - Inspiration
